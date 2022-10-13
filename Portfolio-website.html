@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            *{
+                box-sizing: border-box;
+                color:white;
+               
+            }
+            body{
+                margin:0px;
+                background-color: rgb(0, 0, 0);
+            }
+
+         
+            @media (min-width:600px) {
+              .stick-navbar{
+              position:sticky;
+              top:0;
+            }
+            }
+    
+        /* Sidebar 1  */
+
+        .sidebar-1{
+            width:30%;
+            height:1000px;
+            border:2px solid black;
+            background-color: black;
+         }
+         .sidebar-1 img{
+            width:100%; 
+            height:400px;
+            border-radius: 50% 50%;
+            margin-top:15px;
+         }
+         .my-sidenavbar{
+                margin-top:15px;
+                display:flex;
+                flex-wrap:wrap;
+                background-color: black;
+                flex-direction:column;
+                box-shadow: 2px 2px 7px 0px rgb(41, 41, 119);
+            }
+            .my-sidenavbar a{
+                color:white;
+                text-align:center;
+                background-color: rgb(0, 0, 0);
+                padding:15px 20px;
+                text-decoration:none;
+                border:1px solid rgb(5, 5, 139);
+            }
+            .my-sidenavbar a:hover{
+                background-color:white;
+                color:rgb(5, 5, 139);
+                border:1px solid rgb(5, 5, 139);
+            }
+            .social-media{
+                display: flex;
+                flex-direction: row;
+                justify-content:center;
+                margin-top: 20px;
+                background-color: white;
+            }
+          @media (max-width:600px) {
+              .sidebar-1{
+                display:none;
+              }
+          }
+
+          /* sidebar 2 */
+            .sidebar-2{
+                padding:20px;
+                width:68%;
+                float:right;
+            }
+          
+            .my-navbar{
+                display:flex;
+                flex-wrap:wrap;
+                background-color: rgb(5, 5, 139);
+                box-shadow: 2px 2px 7px 0px rgb(41, 41, 119);
+                
+            }
+            .my-navbar a{
+                color:white;
+                background-color: rgb(4, 4, 132);
+                padding:15px 20px;
+                text-decoration:none;
+                border:1px solid rgb(5, 5, 139);
+            }
+            .my-navbar a:hover{
+                background-color:white;
+                color:rgb(5, 5, 139);
+                border:1px solid rgb(5, 5, 139);
+            }
+
+            @media (max-width:600px) {
+                 .my-navbar{
+                    flex-direction:column;
+                 }
+                 .my-navbar a{
+                    text-align:center;
+                 }
+            }
+
+
+      /* About css  */
+            .about{
+                display:flex;
+            }
+         
+
+    /* Education CSS */
+       .education-item{
+         display: flex;
+         flex-direction: column;
+         background-color:rgb(155, 92, 176);
+         padding-left: 20px;
+         border-bottom:2px solid black;
+       }
+      
+
+     
+       /* projects css */
+       .project-item{
+             display: flex;
+             flex-direction: column;
+             padding-left:20px;
+             background-color:rgb(155, 92, 176);
+             border-bottom:2px solid black;
+       }
+     
+    
+
+       /* coding css */
+       coding-item{
+         display: flex;
+          flex-direction: column;
+       }
+       coding-item p{
+         padding-left: 30%;
+       }
+       coding-item p a{
+          color:blue;
+          cursor: pointer;
+       }
+     
+
+       /* technologies css */
+       .tools{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+       }
+       .tools-item{
+          width: 300px;
+          min-height: 350px;
+          border:2px solid black;
+          box-shadow: 4px 4px 2px 2px gray;
+          margin-right:8px;
+       }
+       .tools-item-content{
+        display:flex;
+         flex-wrap:wrap;
+       }
+       .tools-item-content a{
+        padding:12px 18px;
+         border:2px solid red;
+         margin:5px; 
+         text-decoration:none;
+         border-radius:3px;
+       }
+       .tools-item:hover{
+          background-color:rgb(125, 123, 124);
+       }
+       .tools-item-content a:hover{
+         background-color: rgb(134, 169, 30);
+         color:black;
+       }
+       @media (max-width:600px) {
+          .tools{
+            flex-direction: column;
+            align-items: center;
+            max-height: auto;
+          }
+          .tools-item{
+            margin-bottom:5%;
+            max-height: auto;
+            margin-left: 100px;
+          }
+       }
+
+
+
+       /* contact us css */
+
+       .contact{
+               max-width:100%;
+           }
+           /* .contact > h2,p{
+               text-align:center;
+               color:black;
+           } */
+           .contact-flex{
+               display:flex;
+               justify-content:center;
+           }
+           .contact-details{
+               margin:40px;
+           }
+           .contact-form{
+               margin:40px;
+           }
+           .contact-details li{
+               text-align:left;
+               list-style-type:circle;
+               list-style-position:inside;
+           }
+           #username{
+               padding:7px;
+           }
+           #text{
+               grid-column:1/3;
+               padding:7px;
+           }
+           .contact-form-inside{
+               display:grid;
+               grid-template-columns:50% 50%;
+               grid-gap:7px;
+               margin:10px;
+           }
+           @media (max-width:600px){
+               .contact-flex{
+                   flex-direction:column;
+               }
+               .contact-details{
+                   flex-basis:100%;
+                   max-width:100%;
+               }
+               .contact-form{
+                   flex-basis:100%;
+                   max-width:100%;
+               }
+               .contact-form-inside{
+                 display : flex;
+                 flex-direction: column;
+               }
+               
+           }
+          
+        .combine-bar{
+          display: flex;
+          flex-direction:row;
+        }
+        @media (max-width:"600px") {
+          .sidebar-2{
+            width:100%;
+          }
+         
+        }
+        </style>
+    </head>
+    <body>
+
+      <!-- Navigation Bar  -->
+      <nav class="stick-navbar">
+        <div class="my-navbar">
+           <a href="#">Home</a>
+           <a href="#about-id">About</a>
+           <a href="#education-id">Education</a>
+           <a href="#projects-id">Projects</a>
+           <a href="#coding-id">Coding</a>
+           <a href="#tools-id">Tools</a>
+           <a href="#contact-id">Contact</a>
+        </div>
+    </nav>
+<div class="combine-bar">
+    <!-- sidebar 1 -->
+    <div class="sidebar-1">
+      <img src="ak.jpg">
+      <h1 style="text-align: center ;">Awdhesh Kumar</h1>
+         <sidenavigation>
+             <div class="my-sidenavbar">
+                <a href="#">Home</a>
+                <a href="#about-id">About</a>
+                <a href="#education-id">Education</a>
+                <a href="#projects-id">Projects</a>
+                <a href="#coding-id">Coding</a>
+                <a href="#tools-id">Tools</a>
+                <a href="#contact-id">Contact</a>
+             </div>
+         </sidenavigation>
+      <div class="social-media">
+         <a href="#" alt="linkedin"><li style="list-style-image:url(linkedin.svg)"></li></a>
+         <a href="#" alt="Kaggle"><li style="list-style-image:url(kaggle.svg)"></li></a>
+         <a href="#" alt="Instagram"><li style="list-style-image:url(insta.svg)"></li></a>
+      </div>
+    </div>
+
+      <!-- sidebar    -->
+   <div class="sidebar-2">
+    
+    <!-- About profile  -->
+    <about>
+        <h2 id ="about-id" style="text-align:center;border-bottom:2px solid rgb(237, 237, 237);">About</h2>
+         <div class="about">
+           
+            <div style="text-align:center; max-height:auto ;max-width:600px;margin-left:auto;margin-right:auto;">
+              <p>  I am a MERN Stack Developer.
+                I have knowledge of Backend development with  JavaScript and 
+                Frontend development with React-JS. </p>
+            </div>
+         </div>
+        </about>
+     
+
+     <!-- Education profile  -->
+
+     <education>
+        <h2 id ="education-id" style="text-align:center;border-bottom:2px solid rgb(252, 247, 247);">Education</h2>
+        <div class="education">
+              <div class="education-item">
+                <p style="font-size:xx-large;">Graduation</p>
+                <p style="padding-left:20px;">IIITDM Kurnool</p>
+                <p style="padding-left:20px;">B.TECH in CSE</p>
+                <p style="padding-left:20px;">2020 - present</p>
+                <p style="padding-left:20px;">Current CPI : 7.78</p>
+              </div>
+              <div class="education-item">
+                <p style="font-size:large;max-height: auto;">INTERMEDIATE</p>
+                <p style="padding-left:20px; ">JNV ORAI</p>
+                <p style="padding-left:20px; ">Percentage : 89.6 </p>
+              </div>
+              <div class="education-item">
+                <p style="font-size:large; max-height: auto; word-break: break-all;">HIGH SCHOOL</p>
+                <p style="padding-left:20px; ">JNV ORAI</p>
+                <p style="padding-left:20px; ">CGPA : 9.4</p>
+              </div>
+        </div>
+        </education>
+
+        <!-- projects profile -->
+        <project>
+            <h2 id ="projects-id" style="text-align:center;border-bottom:2px solid rgb(248, 246, 246);">Projects</h2>
+            <div class="project">
+                  <div class="project-item" style="min-height:auto;">
+                    <p style="font-size:xx-large;">College Freshers Issue solver </p>
+                    <p style="padding-left:20px;">About : we created a web-platform for freshers , which will introduce about college.</p>
+                    <p style="padding-left:20px;">Technologies : Django, Html, Css </p>
+                  </div>
+                  <div class="project-item" style="min-height:auto;">
+                    <p style="font-size:xx-large;">Titanic Survival : Data Visualization & Analysis</p>
+                    <p style="padding-left:20px;">About : I done the data analysis of titanic survival data</p>
+                    <p style="padding-left:20px;">Technologies : Pandas, Numpy, Seaborn, Matplotlib</p>
+                  </div>
+                  <div class="project-item" style="min-height:auto;">
+                    <p style="font-size:xx-large;">Portfolio Website</p>
+                    <p style="padding-left:20px;">About : It introduce about myself </p>
+                    <p style="padding-left:20px;">Technologies : Html, Css, Js, Bootstrap</p>
+                  </div>
+            </div>
+            </project>
+
+         <!-- coding profile  -->
+         <coding>
+            <div class="coding">
+               <h2 id ="coding-id" style="text-align:center;border-bottom:2px solid rgb(248, 238, 238);">Coding</h2>
+              <div class="coding-list">
+                <div class="coding-item">
+                   <p >LeetCode <a href="https://leetcode.com/awdhesh_kumar/" style="color:red">Profile View</a> </p>
+                   <p > Solved : 300+ questions </p>
+                </div>
+                <div class="coding-item">
+                   <p>HackerRank <a href="https://www.hackerrank.com/awdhesh_kumar" style="color:red">Profile View</a> </p>
+                   <p>5 Star in Problem solving</p>
+                </div>
+                <div class="coding-item">
+                   <p >GFG <a href="https://auth.geeksforgeeks.org/user/awdheshkumar2/practice/" style="color:red"> Profile View</a> </p>
+                   <p >550+ Coding Score | Institute Rank : 5</p>
+                </div>
+              </div> 
+           </div>
+           </coding>
+
+           <!-- Technologies profile  -->
+
+           <technologies>
+            <h2 id ="tools-id" style="text-align:center;border-bottom:2px solid rgb(250, 250, 250);">Tools</h2>
+            <div class="tools">
+              <div class="tools-item">
+                <p style="text-align:center;font-size:xx-large;">Front-End</p>
+                 <div class="tools-item-content">            
+                    <a href="#" style=" border:2px solid rgb(193, 91, 65);">HTML</a>      
+                    <a href="#" style=" border:2px solid rgb(231, 217, 59);">CSS</a> 
+                    <a href="#" style=" border:2px solid rgb(89, 228, 73);">JS</a>
+                    <a href="#" style=" border:2px solid red;">ReactJs</a>
+                    <a href="#" style=" border:2px solid rgb(46, 95, 240);">BootStrap</a>
+                 </div>
+              </div>
+        
+              <div class="tools-item">
+                <p style="text-align:center;font-size:xx-large;">Back-End</p>
+                 <div class="tools-item-content">            
+                    <a href="#" style=" border:2px solid rgb(193, 91, 65);">Nodejs</a>      
+                    <a href="#" style=" border:2px solid rgb(231, 217, 59);">ExpressJs</a> 
+                    <a href="#" style=" border:2px solid rgb(89, 228, 73);">Php</a>
+                    <a href="#" style=" border:2px solid rgb(193, 91, 65);">Mysql</a>      
+                    <a href="#" style=" border:2px solid rgb(231, 217, 59);">MongoDB</a> 
+                 </div>
+              </div>
+        
+              <div class="tools-item">
+                <p style="text-align:center;font-size:xx-large;">Python</p>
+                 <div class="tools-item-content">            
+                    <a href="#" style=" border:2px solid rgb(193, 91, 65);">Pandas</a>      
+                    <a href="#" style=" border:2px solid rgb(231, 217, 59);">Numpy</a> 
+                    <a href="#" style=" border:2px solid rgb(89, 228, 73);">Seaborn</a>
+                    <a href="#" style=" border:2px solid red;">Matplotlib</a>
+                 </div>
+              </div>
+        
+              <div class="tools-item">
+                <p style="text-align:center;font-size:xx-large;">Others</p>
+                 <div class="tools-item-content">            
+                  <a href="#" style=" border:2px solid rgb(248, 25, 245);">Latex</a>
+                    <a href="#" style=" border:2px solid rgb(89, 228, 73);">OpenCV</a>
+                    <a href="#" style=" border:2px solid red;">Figma</a>
+                    <a href="#" style=" border:2px solid rgb(35, 16, 241);">Canva</a>
+                 </div>
+              </div>
+            </div>
+            </technologies>
+
+        <!-- contact us  -->
+        <contact>
+            <div class="contact-form">
+                <h2 id ="contact-id" style="text-align:center;border-bottom:2px solid rgb(253, 253, 253);">Contact</h2>
+                <form>
+                   <div class="contact-form-inside">
+                    <input type="username" name="username" id="username" placeholder="Name">
+                    <input type="email" name="email" id="username" placeholder="EMail">
+                    <input type="text" name="text" id="text" placeholder="Message">
+                    <button type="button" style="padding:15px 20px ;background-color:rgb(7, 14, 91);color:white;justify-self:end;">Submit</button>
+                    </div>
+                </form>
+            </div>
+            </contact>
+        </div>
+      </div>
+    </body>
+</html>
